@@ -1,6 +1,6 @@
 # Seminário da liguagem de programação Dart
-<h1>  Linguagens de programação - T01 </h1>
- Professor - Walter Aoiama Nagai
+##  Linguagens de programação - T01
+Professor - Walter Aoiama Nagai
 ## Alunos:
 * Pedro Mello Morais - RA 2019006791
 * Davi Bessa
@@ -15,12 +15,21 @@ A linguagem Dart blablalbla
 
 
 ## Características da linguagem: 
-### Paradimas de programação
+### Paradimas de programação:
+
 
 ## Sintaxe e estruturas de controle básicas: 
 
+
 ## Recursos avançados e bibliotecas disponíveis na linguagem:
+
 
 ## Exemplos práticos e casos de uso relevantes
 
-## Comparação com outras linguagens populares, se possível
+### Casos relevantes:
+A linguagem Dart é amplamente utilizada no desenvolvimento de aplicativos móveis, web e desktop.
+Em dispositivos móveis, a linguagem é utilizada em conjunto com o framework Flutter, de código aberto. Com o Flutter, é possível criar aplicativos móveis tanto para iOs e Android, com apenas um único código. 
+Atualmente, o Flutter está ampliando sua base para atender também desenvolvimento web e desenvolvimento desktop, além dos dispositivos móveis, com o mesmo código
+
+
+## Comparação com outras linguagens populares, se possível  
