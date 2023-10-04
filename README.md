@@ -54,22 +54,22 @@ Método                                            | Descrição
 --------------------------------------------------|-------------
 .abs()                                            | Retorna o valor absoluto
 .ceil()                                           | Retorna o último inteiro imediatamente superior
-.ceilToDouble()                                   |
-.clamp(num limite-inferior num limite-superior)   |
-.compareTo(num outro-numero)                      |
-.floor()                                          |
-.floorToDouble()                                  |
-.remainder(num outro-numero)                      |
-.round()                                          |
-.roundToDouble()                                  |
-.toDouble()                                       |
-.toInt()                                          |
-.toString()                                       |
-.toStringAsExponential([int digitos])             |
-.toStringAsFixed(int decimais)                    |
-.toStringAsPrecision(int digitos)                 |
-.truncate()                                       |
- .truncateToDouble()                              |
+.ceilToDouble()                                   | Retorna o último número imediatamente superior com o tipo double
+.clamp(num limite-inferior num limite-superior)   | Se o número estiver dentro do limite, retorna o número. Se não, retorna o limite o qual ele extrapolou
+.compareTo(num outro-numero)                      | Compara com outro número, sendo true para diferente e false para iguais
+.floor()                                          | Arredonda o número para o inteiro anterior
+.floorToDouble()                                  | Arredonda o número para o inteiro anterior, no tipo double
+.remainder(num outro-numero)                      | Retorna a sobra da divisão com outro número
+.round()                                          | Arredonda o número para o inteiro mais próximo
+.roundToDouble()                                  | Arredonda o número para o valor inteiro mais próximo no tipo double
+.toDouble()                                       | Converte o número para double
+.toInt()                                          | Converte o número para int
+.toString()                                       | Converte o número para String
+.toStringAsExponential([int digitos])             | Converte para String, com exponencial
+.toStringAsFixed(int decimais)                    | Converte para String contendo N casas decimais
+.toStringAsPrecision(int digitos)                 | Converte para String contendo N dígitos
+.truncate()                                       | Retira as casas decimais, retornando um inteiro
+ .truncateToDouble()                              | Retira as casas decimais, retornando um double
 
 ### Entrada e saída:
 A sintaxe dos comandos de entrada e saída necessitam de uma biblioteca do Dart, dart:io, que permitirá utilizar as funções stdin (para entrada) e stdout (para saída). Abaixo um exemplo dessa utlizização 
@@ -84,6 +84,25 @@ void main () {
     print("O valor do area é: " + area.toString());
 }
 ~~~
+
+### Funções
+As funções em Dart podem ser dos tipos básicos com ou parâmetro e com ou sem retorno. Mas também existem particularidades na linguagem que permitem outras formas de utilização de funções. 
+
+#### Função em variável
+Nesse tipo de função, a variável armazena a função.
+
+~~~ dart
+int Function (int,int) sum = sumFunction;
+print(sum(3,4));
+~~~
+No exemplo, o `print` da variavel sum, já soma os valores passados por parâmetros.
+
+### Estruturas de repetição
+
+### Filter, map e reduce
+
+### Programação orientada a objetos
+
 
 ## Recursos avançados e bibliotecas disponíveis na linguagem:
 
