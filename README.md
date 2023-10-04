@@ -128,7 +128,37 @@ main () {
 }
 ~~~
 ### Estruturas de repetição
-
+Além das estruturas de repetições comuns como declaradas em C++ `for(int i=0; i<n; i++)`, o Dart também oferece a seguinte opção de declaração
+~~~dart
+    var grades = [7.8, 4.5, 9.9, 6.8];
+    for (var grade in grades) {
+    print("O valor da nota é $grade");
+  }
+~~~
+Para o uso de estrutura de repetições para ler valores em Map, pegando só a chave, ou somente o valor, ou o cojunto, pode ser feito das seguintes formas
+~~~dart 
+    Map <String, double> grades = {
+    'João': 7.2,
+    'Rafael': 6.0,
+    'Pedro': 9.2,
+  };
+  //Somente a chave (nome dos alunos)
+  for (String name in grades.keys) {
+    print("Nome do aluno: $name");
+  }
+  //Chave e valores (nome e nota)
+  for (String name in grades.keys) {
+    print("Nome do aluno é $name e sua nota é ${grades[name]}");
+  }
+  //Somente os valores das chaves (notas)
+  for (var grade in grades.values) {
+    print("Notas: $grade");
+  }
+  //Chave e valores das entradas
+  for (var register in grades.entries) {
+    print("O ${register.key} tem nota ${register.value}");
+  }
+~~~
 ### Filter, map e reduce
 
 ### Programação orientada a objetos
