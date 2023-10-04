@@ -1,13 +1,11 @@
-# Seminário da liguagem de programação Dart
-##  Linguagens de programação - T01
-Professor - Walter Aoiama Nagai
-### Alunos:
-* Pedro Mello Morais - RA 2019006791
-* Davi Bessa Martins - RA 2020009188
-* Lucas Luz Souza Pires - 2022003076 
-* Kaique Vitor Malaquias Pereira - RA 2022011864 
-* Enby Castro Ferreira da Silva - RA 2021031880
-* Mateus Cota Lima - RA 2022006953 
+# Liguagem de programação Dart
+### Colaboradores:
+* Pedro Mello Morais
+* Davi Bessa Martins
+* Lucas Luz Souza Pires
+* Kaique Vitor Malaquias Pereira
+* Enby Castro Ferreira da Silva
+* Mateus Cota Lima
 
 
 ## Introdução à linguagem:
