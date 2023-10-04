@@ -102,16 +102,31 @@ int sumFunction (int a, int b) {
 ~~~
 No exemplo, o `print` da variavel sum, já soma os valores passados por parâmetros.
 
-#### Função anônima
+##### Função anônima em variável
 A função não possui nome. 
 ~~~ dart
 main () {
     int Function (int,int) subtraction = (x,y) {
-    return x-y;
-  };
+        return x-y;
+    };
 }
 ~~~
-No exemplo acima, a variável subtration recebe uma função que não possui nome.
+No exemplo acima, a variável `subtraction` recebe uma função que não possui nome que realiza a subtração.
+
+A função anônima também pode ser declarada por inferência.
+~~~ dart
+main () {
+    var multiplication = (x, y) {
+        return x*y;
+    }
+}
+~~~
+Ou também pode ser declarada através de arrows.
+~~~ dart
+main () {
+    var division = (int a, int b) => a/b;
+}
+~~~
 ### Estruturas de repetição
 
 ### Filter, map e reduce
