@@ -92,11 +92,26 @@ As funções em Dart podem ser dos tipos básicos com ou parâmetro e com ou sem
 Nesse tipo de função, a variável armazena a função.
 
 ~~~ dart
-int Function (int,int) sum = sumFunction;
-print(sum(3,4));
+main () {
+    int Function (int,int) sum = sumFunction;
+    print(sum(3,4));
+}
+int sumFunction (int a, int b) {
+  return a+b;
+}
 ~~~
 No exemplo, o `print` da variavel sum, já soma os valores passados por parâmetros.
 
+#### Função anônima
+A função não possui nome. 
+~~~ dart
+main () {
+    int Function (int,int) subtraction = (x,y) {
+    return x-y;
+  };
+}
+~~~
+No exemplo acima, a variável subtration recebe uma função que não possui nome.
 ### Estruturas de repetição
 
 ### Filter, map e reduce
