@@ -157,9 +157,22 @@ Para o uso de estrutura de repetições para ler valores em Map, pegando só a c
 
 
 ## Recursos avançados e bibliotecas disponíveis na linguagem:
-### Web platform libraries
-### Native platform libraries
-### Multi-Platform Libraries
+### Bibliotecas da plataforma Web
+
+dart:html: fornece elementos HTML e outros recursos para aplicativos baseados na web 1.
+dart:indexed_db: armazena valores em um banco de dados de chave-valor no navegador 2.
+dart:js: fornece interoperabilidade com JavaScript 2.
+### Bibliotecas da plataforma nativa
+
+dart:ffi: permite que o código Dart use APIs C nativas 2.
+dart:io: fornece suporte para arquivos, diretórios, processos, soquetes, WebSockets e clientes e servidores HTTP 2.
+dart:isolate: permite a programação concorrente usando isolates independentes 2.
+### Bibliotecas multiplataforma
+
+dart:async: suporta programação assíncrona, com classes como Future e Stream 2.
+dart:collection: fornece classes e utilitários que complementam o suporte à coleção em dart:core 2.
+dart:convert: codificadores e decodificadores para converter entre diferentes representações de dados, incluindo JSON e UTF-8 2.
+dart:math: constantes matemáticas e funções, além de um gerador de números aleatórios 2.
 
 
 ## Exemplos práticos e casos de uso relevantes
