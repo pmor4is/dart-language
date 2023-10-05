@@ -157,6 +157,9 @@ Para o uso de estrutura de repetições para ler valores em Map, pegando só a c
 
 
 ## Recursos avançados e bibliotecas disponíveis na linguagem:
+### Web platform libraries
+### Native platform libraries
+### Multi-Platform Libraries
 
 
 ## Exemplos práticos e casos de uso relevantes
