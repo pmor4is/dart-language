@@ -152,6 +152,21 @@ Para o uso de estrutura de repetições para ler valores em Map, pegando só a c
   }
 ~~~
 ### Filter, map e reduce
+Em Dart, pode-se usar vários métodos para filtrar um elemento. 
+~~~dart
+var evenNumbers = numbers.where((number) => number.isEven);
+~~~
+
+Neste código, salvamos numa variável chamada evenNumbers todos os números pares de numbers. Em Dart, esses métodos retornam um novo objeto com elementos que satisfaçam o método. Caso não exista nenhum elemento que possa ser retornado, sera retornado null.
+
+Dentre os métodos mais básicos, Where() é o mais prático para encontrar elementos.
+~~~dart
+const numbers = [1, -2, 3, 42];
+
+var evenNumbers = numbers.where((number) => number.isEven);
+var negativeNumbers = numbers.where((number) => number.isNegative);
+~~~
+Aqui, utilizamos Where() no primeiro exemplo para percorrer a lista e encontrar elementos pares. Já no segundo utilizamos o mesmo método, porém para encontrar elementos negativos.
 
 ### Programação orientada a objetos
 
