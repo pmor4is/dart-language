@@ -152,6 +152,7 @@ Para o uso de estrutura de repetições para ler valores em Map, pegando só a c
   }
 ~~~
 ### Filter, map e reduce
+#### Filter
 Em Dart, pode-se usar vários métodos para filtrar um elemento. 
 ~~~dart
 var evenNumbers = numbers.where((number) => number.isEven);
@@ -159,7 +160,7 @@ var evenNumbers = numbers.where((number) => number.isEven);
 
 Neste código, salvamos numa variável chamada evenNumbers todos os números pares de numbers. Em Dart, esses métodos retornam um novo objeto com elementos que satisfaçam o método. Caso não exista nenhum elemento que possa ser retornado, sera retornado null.
 
-Dentre os métodos mais básicos, Where() é o mais prático para encontrar elementos.
+Dentre os métodos mais básicos, Where() é o mais prático para encontrar elementos, basta especificar qual condição o elemento precisa satisfazer.
 ~~~dart
 const numbers = [1, -2, 3, 42];
 
@@ -168,6 +169,47 @@ var negativeNumbers = numbers.where((number) => number.isNegative);
 ~~~
 Aqui, utilizamos Where() no primeiro exemplo para percorrer a lista e encontrar elementos pares. Já no segundo utilizamos o mesmo método, porém para encontrar elementos negativos.
 
+Existem métodos como takeWhile() e skipWhile(), que funcionam da seguinte maneira:
+~~~dart
+  const numbers = [1, 3, -2, 0, 4, 5];
+
+  var numbersUntilZero = numbers.takeWhile((number) => number != 0);
+  print('Numbers until 0: $numbersUntilZero');
+
+  var numbersStartingAtZero = numbers.skipWhile((number) => number != 0);
+  print('Numbers starting at 0: $numbersStartingAtZero');
+~~~
+Aqui, vemos o funcionamento dos mesmos. No primeiro exemplo, ele salva na variável numbersUntilZero todos os números do Array até que apareca números diferentes de zero. Já no segundo, ele pula todos os elementos que sejam diferente de zero, salvando em numbersStartingAtZero apenas elementos após satisfazer a condição.
+#### Map
+É possível aplicar uma função em cada um dos elementos utilizando map(), veja no exemplo abaixo:
+~~~dart
+var numbersByTwo = const [1, -2, 3, 42].map((number) => number * 2);
+~~~
+O map() passa por cada um dos elementos do array e os multiplica por 2, salvando o novo objeto na variável numbersByTwo. Isso nos permite modificar todos os elementos de um objeto através de uma função de nossa escolha.
+
+#### Reduce
+O método reduce() junta todos os elementos de um objeto para apenas um elemento. Como exemplo, digamos que queremos somar todos os elementos de um objeto e salvar numa variável. Poderiamos utilizar uma função for para repetir cada um dos elementos e somalos:
+~~~dart
+  var numbers = [1, 2, 3, 4, 5];
+  var sum = 0;
+  for (var number in numbers) {
+    sum += number;
+  }
+~~~
+Porém, utilizando reduce() poderíamos poupar tempo e tornar o código mais fácil:
+~~~dart
+  var numbers = [1, 2, 3, 4, 5];
+  var sum = numbers.reduce((v, e) => v + e);
+~~~
+
+Em resumo, reduce() aqui funciona pegando as duas primeiras variáveis, somando-as, salvando o resultado na primeira variável e então somando novamente com o próximo elemento, salvo na segunda variável.
+~~~dart
+v=1 e=2 result=3
+v=3 e=3 result=6  
+v=6 e=4 result=10 
+v=10 e=5 result=15
+sum: 15
+~~~
 ### Programação orientada a objetos
 
 
