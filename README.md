@@ -29,7 +29,7 @@ Tratando-se de uma linguagem recente, Dart é de alto nível, apresentando sinta
   Este paradigma possui como principal função a otimização do código, o qual permite, por exemplo, a declaração específica dos tipos das variáveis, a detecção de erros antes da compilação e uma refatoração com detecção de incompatibilidades, além de elementos como auto preenchimento, que garantem maior eficiência ao programador.
   
 ### Assincronia:
-  A assincronia permite a utilização do programa enquanto tarefas demoradas, que poderiam parecer “travar” o programa, são realizadas. No caso do Dart, podem ser utilizados elementos como: o objeto Future, que poderá obter um valor futuramente no código sem que este congele a operação de outras tarefas do programa; e os modificadores ‘await/async’, simbolizando operações assíncronas ao código ou que devem esperar o término de outra função para esta retornar um valor. 
+  A assincronia permite a utilização do programa enquanto tarefas demoradas, que poderiam parecer “travar” o programa, são realizadas. No caso do Dart, podem ser utilizados elementos como: o objeto Future, que poderá obter um valor futuramente no código sem que este congele a operação de outras tarefas do programa; e os modificadores ‘await' e 'async’, simbolizando operações assíncronas ao código ou que devem esperar o término de outra função para esta retornar um valor. 
 
 ### Coletor de lixo:
   O Garbage Collector (coletor de lixo) é utilizado para a reutilização da memória quando esta não está mais sendo utilizada para algum dado. Este paradigma é imprescindível para a otimização da memória e do desempenho do programa sem que o desenvolvedor tenha que se preocupar com a realocação manual da memória.
