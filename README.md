@@ -225,8 +225,27 @@ v=10 e=5 result=15
 sum: 15
 ~~~
 ### Programação orientada a objetos
+Em dart, a programacão orientada a objetos é muito parecia como a em Java. Primeiramente, precisamos criar a nossa clase. Neste exemplo, temos uma classe Pessoa() e seus respectivos elementos: nome, idade e gênero, seu construtor e uma função básica de apresentação.
+~~~dart
+class Pessoa{
+
+  String nome;
+  int idade;
+  String genero;
+
+Pessoa(this.nome, this.idade, this.genero);
+
+void apresentacao() {
+print("Olá, meu nome é ${this.nome}, tenho ${this.idade} anos")
+}
+~~~
+
+Agora indo para a classe main, podemos utiliza-la:
+
+~~~dart
 
 
+~~~
 ## Recursos avançados e bibliotecas disponíveis na linguagem:
 ### Bibliotecas da plataforma Web
 
