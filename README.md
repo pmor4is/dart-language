@@ -16,9 +16,23 @@
   Em agosto de 2018, o Dart passou por várias melhorias significativas, incluindo a introdução de um sistema de tipos mais forte, conhecido como "strong mode", melhorias de desempenho e uma sintaxe mais limpa e moderna. Algum tempo depois, ocorreu uma virada importante para o Dart com o lançamento do framework de desenvolvimento de aplicativos móveis chamado Flutter, também desenvolvido pela Google.
   O Flutter utiliza o Dart como sua linguagem de programação principal e ganhou rapidamente popularidade para o desenvolvimento de aplicativos móveis multiplataforma. À medida que o Flutter cresceu em popularidade, a comunidade de desenvolvedores do Dart também expandiu, resultando em um ecossistema mais ativo e no desenvolvimento de recursos adicionais para a linguagem.
 
-## Características da linguagem: 
-### Paradimas de programação:
+## Características da linguagem e Paradimas de programação:
+Tratando-se de uma linguagem recente, Dart é de alto nível, apresentando sintaxe limpa e de fácil compreensão para o desenvolvedor, a qual apresenta os seguintes principais paradigmas:
 
+### Programação Orientada a Objeto (POO):
+  Este paradigma se baseia na criação das denominadas classes, as quais podem ser atribuídas com variáveis e funções, denominados atributos e métodos, respectivamente, originando os objetos, a fim de utilizar certas instâncias específicas e operá-las com mais facilidade. Outras características presentes são o encapsulamento, herança, abstração e polimorfismo. 
+  
+### Programação Funcional:
+  Este paradigma se refere ao uso de funções, relacionadas à matemática, que podem ser aplicadas dentro de outras funções no código, com o fim principal de compactá-lo e melhorar seu entendimento, útil para possíveis manutenções, além de um uso melhor do poder de processamento da máquina utilizada. Dentro das composições das funções, também podem ser utilizadas diferentes estruturas de dados, como map e reduce, por exemplo.
+
+### Tipagem estática:
+  Este paradigma possui como principal função a otimização do código, o qual permite, por exemplo, a declaração específica dos tipos das variáveis, a detecção de erros antes da compilação e uma refatoração com detecção de incompatibilidades, além de elementos como auto preenchimento, que garantem maior eficiência ao programador.
+  
+### Assincronia:
+  A assincronia permite a utilização do programa enquanto tarefas demoradas, que poderiam parecer “travar” o programa, são realizadas. No caso do Dart, podem ser utilizados elementos como: o objeto Future, que poderá obter um valor futuramente no código sem que este congele a operação de outras tarefas do programa; e os modificadores ‘await/async’, simbolizando operações assíncronas ao código ou que devem esperar o término de outra função para esta retornar um valor. 
+
+### Coletor de lixo:
+  O Garbage Collector (coletor de lixo) é utilizado para a reutilização da memória quando esta não está mais sendo utilizada para algum dado. Este paradigma é imprescindível para a otimização da memória e do desempenho do programa sem que o desenvolvedor tenha que se preocupar com a realocação manual da memória.
 
 ## Sintaxe e estruturas de controle básicas: 
 ### Hello World:
