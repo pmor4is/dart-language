@@ -240,12 +240,14 @@ print("Olá, meu nome é ${this.nome}, tenho ${this.idade} anos")
 }
 ~~~
 
-Agora indo para a classe main, podemos utiliza-la:
-
+Agora indo para a classe main, podemos implementa-la da seguinte forma:
 ~~~dart
-
-
+void main() {
+  var pessoa = new Pessoa("Enby", 20, "fem");
+  pessoa.apresentacao();
+}
 ~~~
+Programacão orientada a objetos em Dart pode ser muitíssimo familiar para quem já utilizou linguagens como Java, pois sua implementação e utilização são praticamente idênticas.
 ## Recursos avançados e bibliotecas disponíveis na linguagem:
 ### Bibliotecas da plataforma Web
 
