@@ -23,7 +23,7 @@ Tratando-se de uma linguagem recente, Dart é de alto nível, apresentando sinta
   Este paradigma se baseia na criação das denominadas classes, as quais podem ser atribuídas com variáveis e funções, denominados atributos e métodos, respectivamente, originando os objetos, a fim de utilizar certas instâncias específicas e operá-las com mais facilidade. Outras características presentes são o encapsulamento, herança, abstração e polimorfismo. 
   
 ### Programação Funcional:
-  Este paradigma se refere ao uso de funções, relacionadas à matemática, que podem ser aplicadas dentro de outras funções no código, com o fim principal de compactá-lo e melhorar seu entendimento, útil para possíveis manutenções, além de um uso melhor do poder de processamento da máquina utilizada. Dentro das composições das funções, também podem ser utilizadas diferentes estruturas de dados, como map e reduce, por exemplo.
+  Este paradigma se refere ao uso de funções, relacionadas à matemática, que podem ser aplicadas dentro de outras funções no código, com o fim principal de compactá-lo e melhorar seu entendimento, útil para possíveis manutenções, além de um uso melhor do poder de processamento da máquina utilizada. Dentro das composições das funções, também podem ser utilizadas diferentes estruturas de dados e funções comuns, como map e reduce, por exemplo.
 
 ### Tipagem estática:
   Este paradigma possui como principal função a otimização do código, o qual permite, por exemplo, a declaração específica dos tipos das variáveis, a detecção de erros antes da compilação e uma refatoração com detecção de incompatibilidades, além de elementos como auto preenchimento, que garantem maior eficiência ao programador.
